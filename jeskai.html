@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Jeskai Way </title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+
+<header>
+<img src="clans_jeskai.jpg" alt="Jeskai Symbol" id="Jeskai">
+</header>
+<div class="wrapper">
+			<nav class="navigation">
+
+				<ul id="menu">
+					<li id="Item1">
+						<a href="index.html" onmouseover="CloseMenu()">Home</a>
+					</li>
+					<li id="Item2">
+						<a onmouseover="OpenMenu('Item2Submenu')">Clans</a>
+						<ul id="Item2Submenu" onmouseover="KeepSubmenu()" onmouseout="CloseMenu()">
+							<a href="abzan.html">Abzan Houses</a>
+							<a href="jeskai.html">Jeskai Way</a>
+							<a href="sultai.html">Sultai Brood</a>
+							<a href="mardu.html">Mardu Horde</a>
+							<a href="temur.html">Temur Frontier</a>
+						</ul>
+					</li>
+					<li id="Item3"><a href="cards.html">Cards</a></li>
+					<li id="Item4"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+</div>
+<div class="adapter">
+<h3> This page will describe to you the uses of the Jeskai deck in Magic: The Gathering.</h3>
+
+	<p> The Jeskai Way are a 3 color clan on the plane of Tarkir. Their colors are <i id="blue">Blue</i>, <i id="red">Red</i>, and <i id="white">White</i>.<br><br>
+	Their unique mechanic in the game is called <strong>Prowess</strong>. This ability is only placed upon creatures. After casting a non-creature spell
+	(i.e. Sorceries, Instants, Enchantments, and Artifacts), the Creature gets +1/+1 until end of turn. This leads to a very
+	tempo-based playstyle, where weak creatures can become very strong after casting a few spells. </p>
+	
+	<p> <b>Pros:</b> <br>
+		<b>-</b> Can deal great amounts of damage via combat tricks - cast many cheap instants when an opponent lets a creature by unblocked, and a seemingly small creature will turn into a massive one.<br>
+		<b>-</b> Can control the flow of the game through spells that control their opponents and their creatures.<br>
+		 
+		<br><br><b>Cons:</b>
+		
+	</p> 
+</div>
+
+<footer class="foot">
+				<p><small>Copyright &copy; <em>August Stevens &amp; Cory Lemist</em> 2014 <span class="tab"></span><a href="tel:802-595-0706"> Call 802-595-0706</a><span class="tab"></span>
+				<a href="sms:802-595-0706"> Text 802-595-0706</a></small></p>
+				<p><small>Images and information taken from mythicspoiler.com</small></p>
+				
+			</footer>
+
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+<script>
+	var Item;
+	var Timer;
+	document.onclick=CloseMenu();
+	function OpenMenu(Menu)
+	{	if (Item){
+			Item.style.visibility="hidden";}
+			Item=document.getElementById(Menu)
+			Item.style.visibility="visible";
+	}
+	function CloseMenu()
+	{
+		Timer=window.setTimeout(PerformClose, 500);
+	}
+	function PerformClose()
+	{
+		if (Item) {Item.style.visibility="hidden";}
+	}
+		function KeepSubmenu() {window.clearTimeout(Timer);}
+		
+	</script>
+</body>
+</html>
