@@ -151,6 +151,7 @@ justify-content: space-around;
 	flex-flow:column wrap;
 	padding:0;
 	width:auto;
+	font-size:20;
 	}
 	#menu li:last-of-type a{
 	border-bottom:none;
