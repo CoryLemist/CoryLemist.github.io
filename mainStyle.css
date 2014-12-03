@@ -157,4 +157,7 @@ justify-content: space-around;
 	#menu ul{
 	
 	}
+	img{
+	max-width:90%;
+	}
 }
