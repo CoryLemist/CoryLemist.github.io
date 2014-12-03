@@ -132,7 +132,7 @@ font-weight:bold;
 span.tab{
     padding: 0 10px;
 }
-@media screen and (min-width: 880px){
+@media screen and (min-width: 480px){
 #menu{
 justify-content: space-around;
 }
@@ -145,7 +145,7 @@ justify-content: space-around;
 #Item4{
 }
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1440px) {
     #menu {
 	-webkit-flex-flow:column wrap;
 	flex-flow:column wrap;
